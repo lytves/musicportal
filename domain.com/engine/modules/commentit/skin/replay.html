@@ -1,0 +1,9 @@
+#{$idcom} - Номер комментария
+#
+#
+<div class="replydiv_commentit">
+<span id="span-{$idcom}" onclick="var oldid=document.getElementById('oldid').value;otvet('{$idcom}',oldid,'0');">{$langcommentit[skin_reply]}</span>
+<span style="padding-left:20px;" id="spanq-{$idcom}" onclick="var oldid=document.getElementById('oldid').value;otvet('{$idcom}',oldid,'1');">{$langcommentit[skin_reply_que]}</span>
+<span style="display:none;" id="repl-{$idcom}" onclick="var oldid=document.getElementById('oldid').value;resetrepl('{$idcom}',oldid);">{$langcommentit[skin_reply_cancel]}</span>
+</div>
+<div id='comment-{$idcom}'></div>

@@ -1,0 +1,54 @@
+# Шаблон блока ввода комментариев
+#{$smilebar} - Смайлики
+#{$htmlz} - Сообщение об отключенных HTML тэгах
+#{$wwp} - Папка со скриптом
+#{$rssico} - RSS
+#{$capt} - Каптча
+#{$novis} - Режим каптчи
+#{$novismail} - Режим почты
+#{$autoarea} - Авторазмер
+#{$panelbar} - Панель редактора
+
+<div class="mservice_viewtrack" style="margin-top:10px;">
+<form name="addcomm" ENCTYPE="multipart/form-data" action="" onKeyPress="if (event.keyCode==10 || (event.ctrlKey && event.keyCode==13)) {send_message();}" method="post">
+<table class="table_addcom_commentit">
+<tr><th style="width:146px; height:40px;"></th>
+<th class="title_addcom_commentit">Добавить комментарий:</th>
+</tr>
+{$panelbar0}
+<tr>
+<td>{$langcommentit[skin_homepage]}</td>
+<td><input id="usurl" {$novisurl}  name="useurl" value="{$oldurl}" size="20" /></td>
+</tr>
+<tr>
+<td></td>
+<td><div class="panelbar_commentit">{$panelbar}  {$rssico}
+<br clear="left">{$smilebar}</div></td>
+</tr>
+<tr>
+<td style="height:10px;"></td>
+<td></td>
+</tr>
+<tr>
+<td style="padding-left:5px;">{$langcommentit[skin_comment]} <font color="#F7A8A8">*</font></td>
+<td><textarea {$autoarea} rows="5" id="textz" name="comment" class="f_input textarea_commentit">{$oldmess}</textarea></td>
+</tr>
+<tr>
+<td style="height:10px;"></td>
+<td></td>
+</tr>
+<tr>
+<td style="padding-left:5px;">{$capt}</td>
+<td>
+<p><input {$novis} id="keystringz" autocomplete="off" name="keystring" class="f_input" /></p>
+</td>
+</tr>
+<tr><td style="padding-left:5px;" colspan="2">
+<center>
+<button type="submit" class="submit2" style="margin-bottom:10px;" id="enter" onclick="javascript:send_message();return false;" name="addcomment">{$langcommentit[skin_addcomment]} [Ctrl+Enter]</button>
+<img alt="{$langcommentit[core_loading]}" style="display:none;" id="miniload" src="/{$wwp}/im/loadermini.gif" border="0" align="absmiddle" />
+</center>
+<font color="#F7A8A8">*</font> пункты обязательные для заполнения
+</td></tr>
+</table>
+</form>

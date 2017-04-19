@@ -1,0 +1,10 @@
+{
+    "version": "1",
+    "api_version": 1,
+
+    "layout": {
+        "logo": "http://domain.com/domain.png",
+        "color": "#ffffff",
+        "show_title": false
+    }
+}

@@ -1,0 +1,7 @@
+Options -Indexes
+DirectoryIndex adm.php
+<Files "adm.php">
+  Order Deny,Allow
+#  Deny from all
+  Allow from all
+</Files>

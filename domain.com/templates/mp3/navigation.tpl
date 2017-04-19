@@ -1,0 +1,1 @@
+<div class="navigation">[prev-link]Назад[/prev-link] &nbsp; {pages} &nbsp; [next-link]Далее[/next-link]</div>

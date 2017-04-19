@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ru-RU">
+<head>
+  <title>Типограф</title>
+  <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+  <script type="text/javascript" src="../../utils/mctabs.js"></script>
+  <script type="text/javascript" src="../../utils/form_utils.js"></script>
+  <script type="text/javascript" src="js/typograf.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+  <link rel="stylesheet" type="text/css" href="css/typograf.css" />
+  <base target="_self" />
+</head>
+<body>
+<form name="source" action="#">
+<div class="wrapper">
+  <table>
+    <thead>
+      <th style="width:45%">
+        После типографской обработки (<a href="#" id="edit" onclick="edit_source(); return false;">Редактировать</a>)
+      </th>
+    </thead>
+    <tr>
+      <td>
+        <div id="tbefore" style="display:none;"></div>
+		<div id="tafter"></div>
+        <textarea style="display:none;" id="tbefore_text"></textarea>
+		<button style="display:none;" onclick="send_data(); return false;" id="apply_button">Применить</button>
+      </td>
+    </tr>
+  </table>
+  <div class="bottom">
+    <button onclick="TypografDialog.saveContent();">Вставить в текст!</button>
+    <button onclick="tinyMCEPopup.close();">Отмена</button>
+  </div>
+</div>
+</form>
+</body>
+</html>
+

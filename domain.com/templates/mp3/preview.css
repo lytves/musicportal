@@ -1,0 +1,221 @@
+html, body {  margin: 0px; padding: 0px;}
+
+table{ border:0px; border-collapse:collapse;}
+
+table td{padding:0px;}
+
+.menu         {color: #545454; font-size: 21px; font-family: Arial Narrow; margin-right: 15px;}
+.menu a       {color: #545454; text-decoration:none;}
+.menu a:hover {color: #000; text-decoration:underline; }
+
+.sr_wehte         {color: #fff; font-size: 11px; font-weight: bold; font-family: Tahoma;}
+.sr_wehte a       {color: #fff; text-decoration:none;}
+.sr_wehte a:hover {color: #f1f1f1; text-decoration:none; }
+
+.tit         {color: #dde3e1; font-size: 21px; font-family: Arial Narrow; margin-right: 15px;}
+.tit a       {color: #dde3e1; text-decoration:none;}
+.tit a:hover {color: #545454; text-decoration:underline; }
+
+.box       { margin: 0px 10px 0px 10px;  width:260px;   }
+
+.box2       { margin: 0px 10px 0px 10px;  width:250px; padding: 10px 10px 10px 10px; }
+
+
+.box3       { width:250px;  }
+
+.box_news       { margin: 10px 30px 10px 10px; }
+
+.title_mod         {color: #282525; font-size: 21px; font-family: Arial Narrow; }
+.title_mod a       {color: #282525; text-decoration:none;}
+.title_mod a:hover {color: #545454; text-decoration:none; }
+
+
+.text_mod         {color: #646464; font-size: 11px; font-family: Tahoma; line-height: 150%; }
+.text_mod a       {color: #3aa825; text-decoration:none;}
+.text_mod a:hover {color: #545454; text-decoration:underline; }
+
+
+.fon { background-image: url(../images/1_06.gif); height: 58px; padding: 5px 5px 0px 5px; }
+
+.line_oren { background: url(../images/line_oren.gif) repeat-x;  height: 11px;}
+
+.line{ background: url(../images/line.gif) repeat-x;  height: 5px;}
+
+.linea{ background: url(../images/linea.gif) repeat-x;  height: 5px;}
+
+.tit_a         {color: #282525; font-size: 21px; font-family: Arial Narrow; padding: 20px 0px 0px 0px;}
+.tit_a a       {color: #282525; text-decoration:none;}
+.tit_a a:hover {color: #282525; text-decoration:underline; }
+
+
+.speedbar         {color: #545454; font-size: 11px; font-family: Tahoma;}
+.speedbar a       {color: #545454; text-decoration:none;}
+.speedbar a:hover {color: #545454; text-decoration:underline; }
+
+.login_text         {color: #545454; font-size: 11px;  font-family: Verdana; line-height: 200%;}
+.login_text a       {color: #545454; text-decoration:none;}
+.login_text a:hover {color: #545454; text-decoration:underline; }
+
+.speed         {color: #545454; font-size: 12px; font-family: Tahoma; line-height: 150%;}
+.speed a       {color: #545454; text-decoration:none;}
+.speed a:hover {color: #545454; text-decoration:underline; }
+
+
+.register { font-family: Arial Narrow, Arial, Tahoma; font-size: 21px; font-weight: normal; color: #84c529;}
+.register a       {font-size: 21px; color: #4e4e4e; text-decoration:none;}
+.register a:hover {font-size: 21px; color: #202020; text-decoration:none;}
+
+
+
+.bbre {	background: #FFF;	border: 1px solid #b3b9c3;	color: #4d4d4d;	font-family: Verdana;	font-size: 12px; margin: 2px 5px 2px 1px; 
+    padding: 2px 0px 0px 2px;	width: 175px;	height: 22px;}
+
+.poisk {	background: #FFF;	border: 1px solid #b3b9c3;	color: #4d4d4d;	font-family: Verdana;	font-size: 12px; margin: 2px 5px 2px 1px; 
+    padding: 2px 2px 2px 2px;	width: 165px;	height: 22px;}
+
+
+.title         {color: #4e4e4e; font-size: 18px;  font-family: Trebuchet MS; font-weight: normal; line-height:150%;}
+.title a       {color: #545454; text-decoration:none;}
+.title a:hover {color: #545454; text-decoration:none;}
+
+.ren         {color: #3aa825; font-size: 18px;  font-family: Tahoma;; font-weight: normal; line-height:150%;}
+.ren a       {color: #3aa825; text-decoration:none;}
+.ren a:hover {color: #545454; text-decoration:none;}
+
+.meta         {color: #545454; font-size: 11px; font-family: Tahoma; padding-left: 35px; line-height:150%;}
+.meta a       {color: #3aa825; text-decoration:none;}
+.meta a:hover {color: #545454; text-decoration:underline; }
+
+.text         {color: #282525; font-size: 12px; font-family: Verdana; line-height: 150%;}
+.text a       {color: #3aa825; text-decoration:none;}
+.text a:hover {color: #282525; text-decoration:underline; }
+
+ 
+.comm { background: #F5F5F5; padding: 5px 5px 5px 5px; margin: 5px 0px 5px 0px;}
+
+
+.box_r       { padding: 0px 0px 0px 10px; }
+
+
+.teg         {color: #545454; font-size: 11px; font-family: Tahoma; line-height: 150%;}
+.teg a       {color: #545454; text-decoration:none;}
+.teg a:hover {color: #545454; text-decoration:underline; }
+
+
+/* ------------------- Блять нужно смотреть внимательно! ----------------------------*/
+
+a.but {
+    background: transparent url(../images/kn.gif) no-repeat scroll top right;
+    color: #8d8d8d;
+    display: block;
+    font-weight: bold;
+    float: left;
+    font: normal 11px Tahoma, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+a.but span {
+	font-weight: bold;
+    background: transparent url(../images/kn1.gif) no-repeat;
+    display: block;
+
+    line-height: 14px;
+    padding: 5px 0 5px 18px;
+    text-decoration:none;
+}
+a.but:active {
+    background-position: bottom right;
+    color: #fff;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.but:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 18px; /* push text down 1px */
+}
+
+
+.hint
+{
+	background:#84c529;
+	font-family: Tahoma, Arial;
+	font-size:12px;
+    line-height:11px;
+    font-weight: bold;
+    color:#fff;
+    width:auto;
+    border:1px solid #84c529;
+    z-index:1000;
+    margin:0px;
+    padding:10px;
+    position:absolute;
+    visibility:hidden;
+}
+
+
+#hintbox {
+    font-family: Tahoma;
+    text-align : left;
+    width:auto;
+    font-size : 11px;
+    border : 1px solid #99a1ab;
+    background-color : #fff;
+    layer-background-color : #a396d9;
+    color : #282828;
+    margin : 10px 0 0 10px;
+    padding : 3px 5px;
+    position : absolute;
+    visibility : hidden;
+    z-index : 998;
+    -moz-opacity : 0.9;
+    -moz-border-radius : 5px;
+    filter : alpha(opacity="90");
+}
+
+.onl_table {
+    width : 100%;
+    font-size : 10px;
+}
+.onl_table td {
+    padding-right : 5px;
+    font-size : 10px;
+/* Раскомментировать, если у Вас в две колонки*/ /*    width : 50%;
+*/ }
+
+.a_link, .a_link a:link, .a_link a:visited, .a_link_on {
+    color : #ff0000;
+}
+.a_link_on a:hover, .a_link_on a:active {
+    color : #ff0000;
+}
+
+.u_link, .u_link a:link, .u_link a:visited, .u_link_on {
+    color : #666666;
+}
+.u_link_on a:hover, .u_link_on a:active {
+    color : #4b73d4;
+}
+
+.e_link, .e_link a:link, .e_link a:visited, .e_link_on {
+    color : #00a400;
+}
+.e_link_on a:hover, .e_link_on a:active {
+    color : #00a400;
+}
+
+.j_link, .j_link a:link, .j_link a:visited, .j_link_on {
+    color : #0000ff;
+}
+.j_link_on a:hover, .j_link_on a:active {
+    color : #0000ff;
+}
+
+.b_link, .b_link a:link, .b_link a:visited, .b_link_on {
+    color : #666666;
+}
+.b_link_on a:hover, .b_link_on a:active {
+    color : #666666;
+}

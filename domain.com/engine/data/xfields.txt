@@ -1,0 +1,1 @@
+pic|картинка||text|http://domain.com/templates/mp3/images/mp3krolik.png|0

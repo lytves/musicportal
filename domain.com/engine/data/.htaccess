@@ -1,0 +1,9 @@
+Order Deny,Allow
+Deny from all
+
+php_flag engine off
+
+<FilesMatch "\.([Pp][Hh][Pp]|[Cc][Gg][Ii]|[Pp][Ll]|[Pp][Hh][Tt][Mm][Ll])\.?.*">
+Order allow,deny
+Deny from all
+</FilesMatch>

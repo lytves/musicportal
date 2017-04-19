@@ -1,0 +1,1 @@
+<?require_once ($_SERVER['DOCUMENT_ROOT'].'/engine/modules/commentit/comment.php');?>

@@ -1,0 +1,16 @@
+<FilesMatch ".*">
+   Order allow,deny
+   Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(avi|divx|mp3|mp4|flv|swf|wmv|m4v|m4a|mov|mkv|3gp|f4v)$|^$">
+   Order deny,allow
+   Allow from all
+</FilesMatch>
+
+php_flag engine off
+
+<FilesMatch "\.([Pp][Hh][Pp]|[Cc][Gg][Ii]|[Pp][Ll]|[Pp][Hh][Tt][Mm][Ll])\.?.*">
+Order allow,deny
+Deny from all
+</FilesMatch>

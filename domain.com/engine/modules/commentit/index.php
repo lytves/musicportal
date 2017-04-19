@@ -1,0 +1,1 @@
+<?php exit('This work CommentIt 5 Ajax'); ?>

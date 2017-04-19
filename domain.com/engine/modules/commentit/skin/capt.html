@@ -1,0 +1,12 @@
+############
+#{$width} - ширина каптчи (автомат)
+#{$height} - высота каптчи (автомат)
+#{$captsourse} - картинка каптчи
+# refcapt() - функция на обновление каптчи
+
+{$langcommentit[skin_enter_capt]} <font color="#F7A8A8" style="
+">*</font>
+<div style="width:{$width};height:{$height};">
+{$captsourse}
+<center><span onclick="refcapt()" class="capt_commentit">{$langcommentit[skin_reload_capt]}</span></center>
+</div>

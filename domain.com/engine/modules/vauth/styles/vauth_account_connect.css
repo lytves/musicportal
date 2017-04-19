@@ -1,0 +1,147 @@
+
+#right_userinfo {
+
+	float:left;
+	min-width:300px;
+	min-height:100px;
+
+	}
+	
+#user_photo {
+
+	min-width:0px;
+	min-height:0px;
+	float:left;
+	clear:left;
+	margin:10px 0;
+}
+
+#user_photo img{
+
+	display:block;
+	border-radius:3px;
+	box-shadow: 0px 0px 3px #333;
+
+}
+
+#ac_connect {
+
+	float:left;
+	clear:left;
+	min-width:300px;
+	min-height:100px;
+
+}
+
+.ac_connect {
+
+	float:left;
+	clear:left;
+	width:300px;
+	min-height:100px;
+
+}
+
+#vauth_info {
+
+	border-radius:5px;
+	background-color:#FFFFCC;
+	min-width:0px;
+	min-height:0px;
+	float:left;
+	clear:left;
+	margin:10px;
+	padding:10px;
+
+}
+
+.back_to_profile {
+	float:left;
+	clear:left;
+	min-with:20px;
+	font-size:18pt;
+}
+
+.dle_connect {
+
+	text-align:left;
+	margin-top:5px;
+	color:#42668c;
+	border-radius:5px;
+	box-shadow: 0px 0px 5px #888;
+	float:left;
+	clear:left;
+	margin-left:20px;
+	width:200px;
+	height:20px;
+	border-bottom:0px;
+	border-left:0px;
+	border-right:0px;
+	border-top:1px;
+	background-color:#E2EDF2;
+
+}
+
+.dle_connect_off {
+
+	text-align:left;
+	margin-top:5px;
+	color:#42668c;
+	border-radius:5px;
+	box-shadow: 0px 0px 5px #888;
+	float:left;
+	clear:left;
+	margin-left:20px;
+	width:200px;
+	height:20px;
+	border-bottom:0px;
+	border-left:0px;
+	border-right:0px;
+	border-top:1px;
+
+	background-color:#FFFFCC;
+
+}
+.dle_connect_off:hover {
+
+	background-color:red;
+	color:#fff;
+
+}
+
+.dle_connect:hover {
+
+	color:#fff;
+	background-color:green;
+
+}
+
+#login_name, #login_password {
+
+	width:200px;
+	height:20px;
+	float:left;
+
+}
+
+button {
+
+	width:200px;
+	margin:15px;
+	borser-radius:5px;
+	height:20px;
+	background:#fff;
+	border:0px;
+	box-shadow: 0px 0px 5px #888;
+	margin-top:0px;
+
+}
+
+button:hover {
+
+	background:#f7f7f7;
+	border:0px;
+	box-shadow: 0px 0px 7px #888;
+	cursor:pointer;
+
+}

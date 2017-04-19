@@ -1,0 +1,19 @@
+# Шаблон блока вывода комментариев
+#{$names} - Имя пользователя
+#{$comment_msg} - Текст комментария
+#{$date} - Дата размещения комментария
+#{$divonter} - Система многоуровневых комментариев
+#{$scravatar} - Аватар
+#{$ratingcomment} - Рейтинга
+
+<div class="view_com_commentit" style="margin-left:{$commentpx}px;">
+<table class="table_commentit">
+<tr>
+<td class="first_td">
+{$scravatar} <font>{$names}</font> {$icoservice} <span class="date_commentit">{$date}</span><br />{$comment_msg}
+{$divonter}
+</td>
+<td class="second_td">
+{$ratingcomment}
+</td></tr></table>
+</div>

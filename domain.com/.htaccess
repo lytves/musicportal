@@ -1,0 +1,192 @@
+<Files "q7yfhwzn.php">
+   Order Deny,Allow
+#  Deny from all
+#  Allow from ip.ip.ip.ip/16
+   Allow from all
+</Files>
+
+DirectoryIndex index.php
+
+RewriteEngine On
+Options +FollowSymLinks
+
+RewriteCond %{HTTP_HOST} ^www.domain.com$ [NC]
+RewriteRule ^(.*)$ http://domain.com/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ http://domain.com [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ http://domain.com [R=301,L]
+
+# DleMusic Service by odmin
+RewriteRule ^music(/?)+$ index.php?do=music [L]
+RewriteRule ^music/search-([0-9]+)-([0-9]+)-(.*)/sort-([0-9]).html+$ index.php?do=music&act=dosearch&searchtype=$1&searchtext=$3&page=$2&sort=$4 [L]
+RewriteRule ^music/search-([0-9]+)-([0-9]+)-(.*).html+$ index.php?do=music&act=dosearch&searchtype=$1&searchtext=$3&page=$2 [L]
+RewriteRule ^music/search-([0-9]+)-(.*)/sort-([0-9]).html+$ index.php?do=music&act=dosearch&searchtype=$1&searchtext=$2&sort=$3 [L]
+RewriteRule ^music/search-([0-9]+)-(.*).html+$ index.php?do=music&act=dosearch&searchtype=$1&searchtext=$2 [L]
+
+RewriteRule ^music/popularsearchzero-page-([0-9]+).html+$ index.php?do=music&act=popularsearchzero&page=$1 [L]
+RewriteRule ^music/popularsearchalbumweek-page-([0-9]+).html+$ index.php?do=music&act=popularsearchalbumweek&page=$1 [L]
+RewriteRule ^music/popularsearchtitleweek-page-([0-9]+).html+$ index.php?do=music&act=popularsearchtitleweek&page=$1 [L]
+RewriteRule ^music/popularsearchartistweek-page-([0-9]+).html+$ index.php?do=music&act=popularsearchartistweek&page=$1 [L]
+RewriteRule ^music/downloadstopweek_admin-page-([0-9]+).html+$ index.php?do=music&act=downloadstopweek_admin&page=$1 [L]
+RewriteRule ^music/downloadstop24hr_admin-page-([0-9]+).html+$ index.php?do=music&act=downloadstop24hr_admin&page=$1 [L]
+
+RewriteRule ^music/downloadstopalbumsweek_admin-page-([0-9]+).html+$ index.php?do=music&act=downloadstopalbumsweek_admin&page=$1 [L]
+RewriteRule ^music/downloadstopalbums24hr_admin-page-([0-9]+).html+$ index.php?do=music&act=downloadstopalbums24hr_admin&page=$1 [L]
+
+RewriteRule ^music/artistracks-(.*)-page-(.*)/sort-([0-9]).html+$ index.php?do=music&act=artistracks&nameartist=$1&page=$2&sort=$3 [L]
+RewriteRule ^music/artistracks-(.*)-page-(.*).html+$ index.php?do=music&act=artistracks&nameartist=$1&page=$2 [L]
+RewriteRule ^music/artistracks-(.*)/sort-([0-9]).html+$ index.php?do=music&act=artistracks&nameartist=$1&sort=$2 [L]
+RewriteRule ^music/artistracks-(.*).html+$ index.php?do=music&act=artistracks&nameartist=$1 [L]
+
+RewriteRule ^music/artistclips-(.*)-page-(.*).html+$ index.php?do=music&act=artistclips&nameartist=$1&page=$2 [L]
+RewriteRule ^music/artistclips-(.*).html+$ index.php?do=music&act=artistclips&nameartist=$1 [L]
+
+RewriteRule ^music/new-mp3-albums-page-([0-9]+).html+$ index.php?do=music&act=new-mp3-albums&page=$1 [L]
+
+RewriteRule ^music/albums-(.*)-page-(.*)/sort-([0-9]).html+$ index.php?do=music&act=albums&nameartist=$1&page=$2&sort=$3 [L]
+RewriteRule ^music/albums-(.*)-page-(.*).html+$ index.php?do=music&act=albums&nameartist=$1&page=$2 [L]
+RewriteRule ^music/albums-(.*)/sort-([0-9]).html+$ index.php?do=music&act=albums&nameartist=$1&sort=$2 [L]
+RewriteRule ^music/albums-(.*).html+$ index.php?do=music&act=albums&nameartist=$1 [L]
+
+RewriteRule ^music/monthuserdownloads-albums-([0-9]+)-page-([0-9]+).html+$ index.php?do=music&act=monthuserdownloads-albums&user=$1&page=$2 [L]
+RewriteRule ^music/monthuserdownloads-albums-([0-9]+).html+$ index.php?do=music&act=monthuserdownloads-albums&user=$1 [L]
+
+RewriteRule ^music/monthuserdownloads-([0-9]+)-page-([0-9]+).html+$ index.php?do=music&act=monthuserdownloads&user=$1&page=$2 [L]
+RewriteRule ^music/monthuserdownloads-([0-9]+).html+$ index.php?do=music&act=monthuserdownloads&user=$1 [L]
+
+RewriteRule ^music/monthuserplays-([0-9]+)-page-([0-9]+).html+$ index.php?do=music&act=monthuserplays&user=$1&page=$2 [L]
+RewriteRule ^music/monthuserplays-([0-9]+).html+$ index.php?do=music&act=monthuserplays&user=$1 [L]
+
+RewriteRule ^music/usertracks-([0-9]+)-page-([0-9]+)/sort-([0-9]).html+$ index.php?do=music&act=usertracks&user=$1&page=$2&sort=$3 [L]
+RewriteRule ^music/usertracks-([0-9]+)-page-([0-9]+).html+$ index.php?do=music&act=usertracks&user=$1&page=$2 [L]
+RewriteRule ^music/usertracks-([0-9]+)/sort-([0-9]).html+$ index.php?do=music&act=usertracks&user=$1&sort=$2 [L]
+RewriteRule ^music/usertracks-([0-9]+).html+$ index.php?do=music&act=usertracks&user=$1 [L]
+
+RewriteRule ^music/genre-albums-(.*)-page-(.*)/sort-([0-9]).html+$ index.php?do=music&act=genre-albums&genre=$1&page=$2&sort=$3 [L]
+RewriteRule ^music/genre-albums-(.*)-page-(.*).html+$ index.php?do=music&act=genre-albums&genre=$1&page=$2 [L]
+RewriteRule ^music/genre-albums-(.*)/sort-([0-9]).html+$ index.php?do=music&act=genre-albums&genre=$1&sort=$2 [L]
+RewriteRule ^music/genre-albums-(.*).html+$ index.php?do=music&act=genre-albums&genre=$1 [L]
+
+RewriteRule ^music/myfavalbums-page-([0-9]+)/sort-([0-9]).html+$ index.php?do=music&act=myfavalbums&page=$1&sort=$2 [L]
+RewriteRule ^music/myfavalbums-page-([0-9]+).html+$ index.php?do=music&act=myfavalbums&page=$1 [L]
+RewriteRule ^music/myfavalbums/sort-([0-9]).html+$ index.php?do=music&act=myfavalbums&sort=$1 [L]
+
+RewriteRule ^music/happy-new-year-page-([0-9]+)/sort-([0-9]).html+$ index.php?do=music&act=happy-new-year&page=$1&sort=$2 [L]
+RewriteRule ^music/happy-new-year-page-([0-9]+).html+$ index.php?do=music&act=happy-new-year&page=$1 [L]
+RewriteRule ^music/happy-new-year/sort-([0-9]).html+$ index.php?do=music&act=happy-new-year&sort=$1 [L]
+
+RewriteRule ^music/myfavartists-page-([0-9]+).html+$ index.php?do=music&act=myfavartists&page=$1 [L]
+RewriteRule ^music/myfavtracks-page-([0-9]+).html+$ index.php?do=music&act=myfavtracks&page=$1 [L]
+
+RewriteRule ^music/mytracks-page-([0-9]+)/sort-([0-9]).html+$ index.php?do=music&act=mytracks&page=$1&sort=$2 [L]
+RewriteRule ^music/mytracks-page-([0-9]+).html+$ index.php?do=music&act=mytracks&page=$1 [L]
+RewriteRule ^music/mytracks/sort-([0-9]).html+$ index.php?do=music&act=mytracks&sort=$1 [L]
+
+RewriteRule ^music/bestmp3_month-page-([0-9]+).html+$ index.php?do=music&act=bestmp3_month&page=$1 [L]
+RewriteRule ^music/bestmp3_week-page-([0-9]+).html+$ index.php?do=music&act=bestmp3_week&page=$1 [L]
+RewriteRule ^music/bestmp3_24hr-page-([0-9]+).html+$ index.php?do=music&act=bestmp3_24hr&page=$1 [L]
+
+RewriteRule ^music/top_club2014-page-([0-9]+).html+$ index.php?do=music&act=top_club2014&page=$1 [L]
+RewriteRule ^music/top_club2013-page-([0-9]+).html+$ index.php?do=music&act=top_club2013&page=$1 [L]
+RewriteRule ^music/mp3top2014-page-([0-9]+).html+$ index.php?do=music&act=mp3top2014&page=$1 [L]
+RewriteRule ^music/mp3top2013-page-([0-9]+).html+$ index.php?do=music&act=mp3top2013&page=$1 [L]
+RewriteRule ^music/mp3top2012-page-([0-9]+).html+$ index.php?do=music&act=mp3top2012&page=$1 [L]
+RewriteRule ^music/mp3top2011-page-([0-9]+).html+$ index.php?do=music&act=mp3top2011&page=$1 [L]
+RewriteRule ^music/mp3top-page-([0-9]+).html+$ index.php?do=music&act=mp3top&page=$1 [L]
+RewriteRule ^music/new_mp3-page-([0-9]+).html+$ index.php?do=music&act=new_mp3&page=$1 [L]
+RewriteRule ^music/new-music-clips-page-([0-9]+).html+$ index.php?do=music&act=new-music-clips&page=$1 [L]
+
+RewriteRule ^music/artist-(.*)-page-([0-9]+).html+$ index.php?do=music&act=artist&letter=$1&page=$2 [L]
+RewriteRule ^music/artist-(.*).html+$ index.php?do=music&act=artist&letter=$1 [L]
+
+RewriteRule ^music/download-mp3-([0-9]+).html+$ index.php?do=music&act=download&mid=$1 [L]
+RewriteRule ^music/([0-9]+)-mp3-(.*)-(.*).html+$ index.php?do=music&act=view&mid=$1 [L]
+RewriteRule ^music/([0-9]+)-album-(.*)-(.*).html+$ index.php?do=music&act=album&aid=$1 [L]
+# /DleMusic Service by odmin
+RewriteRule ^music/play-(.*).html+$ engine/modules/mservice/playning.php?id=$1 [L]
+RewriteRule ^music/([^/]+).html+$ index.php?do=music&act=$1 [L]
+# DleMusic Service by Flexer
+
+# Редиректы
+RewriteRule ^page/(.*)$ index.php?cstart=$1 [L]
+RewriteRule ^b54dacded7d4.html$ b54dacded7d4.html [L]
+
+# Сам пост
+RewriteRule ^([0-9]{4})/([0-9]{2})/([0-9]{2})/page,([0-9]+),([0-9]+),(.*).html(/?)+$ index.php?subaction=showfull&year=$1&month=$2&day=$3&news_page=$4&cstart=$5&news_name=$6 [L]
+RewriteRule ^([0-9]{4})/([0-9]{2})/([0-9]{2})/page,([0-9]+),(.*).html(/?)+$ index.php?subaction=showfull&year=$1&month=$2&day=$3&news_page=$4&news_name=$5 [L]
+RewriteRule ^([0-9]{4})/([0-9]{2})/([0-9]{2})/print:page,([0-9]+),(.*).html(/?)+$ engine/print.php?subaction=showfull&year=$1&month=$2&day=$3&news_page=$4&news_name=$5 [L]
+RewriteRule ^([0-9]{4})/([0-9]{2})/([0-9]{2})/(.*).html(/?)+$ index.php?subaction=showfull&year=$1&month=$2&day=$3&news_name=$4 [L]
+
+RewriteRule ^([^.]+)/page,([0-9]+),([0-9]+),([0-9]+)-(.*).html(/?)+$ index.php?newsid=$4&news_page=$2&cstart=$3 [L]
+RewriteRule ^([^.]+)/page,([0-9]+),([0-9]+)-(.*).html(/?)+$ index.php?newsid=$3&news_page=$2 [L]
+RewriteRule ^([^.]+)/print:page,([0-9]+),([0-9]+)-(.*).html(/?)+$ engine/print.php?news_page=$2&newsid=$3 [L]
+RewriteRule ^([^.]+)/([0-9]+)-(.*).html(/?)+$ index.php?newsid=$2 [L]
+
+RewriteRule ^page,([0-9]+),([0-9]+),([0-9]+)-(.*).html(/?)+$ index.php?newsid=$3&news_page=$1&cstart=$2 [L]
+RewriteRule ^page,([0-9]+),([0-9]+)-(.*).html(/?)+$ index.php?newsid=$2&news_page=$1 [L]
+RewriteRule ^print:page,([0-9]+),([0-9]+)-(.*).html(/?)+$ engine/print.php?news_page=$1&newsid=$2 [L]
+RewriteRule ^([0-9]+)-(.*).html(/?)+$ index.php?newsid=$1 [L]
+
+# За день
+RewriteRule ^([0-9]{4})/([0-9]{2})/([0-9]{2})(/?)+$ index.php?year=$1&month=$2&day=$3 [L]
+RewriteRule ^([0-9]{4})/([0-9]{2})/([0-9]{2})/page/([0-9]+)(/?)+$ index.php?year=$1&month=$2&day=$3&cstart=$4 [L]
+# За весь месяц
+RewriteRule ^([0-9]{4})/([0-9]{2})(/?)+$ index.php?year=$1&month=$2 [L]
+RewriteRule ^([0-9]{4})/([0-9]{2})/page/([0-9]+)(/?)+$ index.php?year=$1&month=$2&cstart=$3 [L]
+# Вывод за весь год
+RewriteRule ^([0-9]{4})(/?)+$ index.php?year=$1 [L]
+RewriteRule ^([0-9]{4})/page/([0-9]+)(/?)+$ index.php?year=$1&cstart=$2 [L]
+# вывод отдельному тегу
+#RewriteRule ^tags/([^/]*)(/?)+$ index.php?do=tags&tag=$1 [L]
+#RewriteRule ^tags/([^/]*)/page/([0-9]+)(/?)+$ index.php?do=tags&tag=$1&cstart=$2 [L]
+# вывод для отдельного юзера
+RewriteRule ^user/([^/]*)/rss.xml$ engine/rss.php?subaction=allnews&user=$1 [L]
+RewriteRule ^user/([^/]*)(/?)+$ index.php?subaction=userinfo&user=$1 [L]
+RewriteRule ^user/([^/]*)/page/([0-9]+)(/?)+$ index.php?subaction=userinfo&user=$1&cstart=$2 [L]
+RewriteRule ^user/([^/]*)/news(/?)+$ index.php?subaction=allnews&user=$1 [L]
+RewriteRule ^user/([^/]*)/news/page/([0-9]+)(/?)+$ index.php?subaction=allnews&user=$1&cstart=$2 [L]
+RewriteRule ^user/([^/]*)/news/rss.xml(/?)+$ engine/rss.php?subaction=allnews&user=$1 [L]
+# вывод всех последних новостей
+RewriteRule ^lastnews/(/?)+$ index.php?do=lastnews [L]
+RewriteRule ^lastnews/page/([0-9]+)(/?)+$ index.php?do=lastnews&cstart=$1 [L]
+# вывод в виде каталога
+RewriteRule ^catalog/([^/]*)(/?)+$ index.php?catalog=$1 [L]
+RewriteRule ^catalog/([^/]*)/page/([0-9]+)(/?)+$ index.php?catalog=$1&cstart=$2 [L]
+# вывод непрочитанных статей
+RewriteRule ^newposts(/?)+$ index.php?subaction=newposts [L]
+RewriteRule ^newposts/page/([0-9]+)(/?)+$ index.php?subaction=newposts&cstart=$1 [L]
+# Статистические страницы
+RewriteRule ^static/(.*).html(/?)+$ index.php?do=static&page=$1 [L]
+# вывод избранных статей
+RewriteRule ^favorites(/?)+$ index.php?do=favorites [L]
+RewriteRule ^favorites/page/([0-9]+)(/?)+$ index.php?do=favorites&cstart=$1 [L]
+
+#RewriteRule ^statistics.html$ index.php?do=stats [L]
+RewriteRule ^addnews.html$ index.php?do=addnews [L]
+RewriteRule ^rss.xml$ engine/rss.php [L]
+
+# ЧПУ для ссылки на страницу обратной связи
+RewriteRule ^feedback.html$ index.php?do=feedback [L]
+# ЧПУ для ссылки на страницу входа пользователя
+RewriteRule ^krolik.html$ index.php?do=enter [L]
+# ЧПУ для ссылки на страницу регистрации пользователя
+RewriteRule ^newkrolik.html$ index.php?do=register [L]
+# ЧПУ для ссылки на страницу восстановления забытого пароля
+RewriteRule ^password.html$ index.php?do=lostpassword [L]
+# ЧПУ для ссылки на страницу восстановления забытого пароля
+RewriteRule ^connect.html$ index.php?do=account_connect [L]
+
+RewriteRule ^pm/$ index.php?do=pm [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^.]+)/page/([0-9]+)(/?)+$ index.php?do=cat&category=$1&cstart=$2 [L]
+RewriteRule ^([^.]+)/?$ index.php?do=cat&category=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^<]+)/rss.xml$ engine/rss.php?do=cat&category=$1 [L]
+RewriteRule ^page,([0-9]+),([^/]+).html$ index.php?do=static&page=$2&news_page=$1 [L]
+RewriteRule ^print:([^/]+).html$ engine/print.php?do=static&page=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+).html$ index.php?do=static&page=$1 [L]
