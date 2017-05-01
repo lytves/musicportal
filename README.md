@@ -8,9 +8,11 @@
 
 ___
 
-Es un ejemplo PHP de portal funcional, la idea es dar las posibilidades a la gente subir sus músicos mp3 ficheros, y entonces es una ocasión buena para compartir su música y descargar la música actual y favorita de otras personas
+**Español:**
 
-El motor de proyecto es **DataLife Engine (DLE) 8.3**, de una versión bastante antigua, pero muy cambiada para ofrecer toda funcionalidad de un portal de música. También usaron todas las parches de seguridad y añadidan mucho más nuevas conjunto con configuración de **Apache** y **Nginx** para cerrar las agujeros de seguridad posibles. Motor rediseñado para usar los mejores en caso de SEO meta tags
+Es un ejemplo en PHP del portal de música, la idea es dar las posibilidades a la gente subir sus musical ficheros mp3, y entonces es una ocasión buena para compartir su música y descargar la música actual y favorita de otras personas
+
+El motor de proyecto es **DataLife Engine (DLE) 8.3**, de una versión bastante antigua, pero muy cambiada para ofrecer toda funcionalidad de un portal de música. También usaron todas las parches de seguridad y añadidan mucho más nuevas, conjunto con configuración de **Apache** y **Nginx** para cerrar las agujeros de seguridad posibles. Motor rediseñado para usar los mejores meta tags en caso de SEO
 
 > **En todos los ficheros** en **domain.com/** debe sobrescribir la cadena "domain.com" al nombre de tu dominio
 
@@ -25,9 +27,9 @@ Añadidan los modules comerciales comprados:
 
 Como idioma de la página se usa solo ruso, pero existe posibilidad añadir otros idiomas añadir ficheros necesitados a **domain.com/language/{idioma}**
 
-Usado dos variantes de templates, estándar y para los smartphone, están en el directorio **domain.com/templates/**
+Usado dos variantes de templates, estándar y para los dispositivos móviles, están en el directorio **domain.com/templates/**
 
-La ruta para entrar a la interfaz de aministrador es **domain.com/q7yfhwzn.php**. Es muy recomendable es en nivel de Apache permitir acceso solo de un IP usado por administrador.
+La ruta para entrar a la interfaz de aministrador es **domain.com/q7yfhwzn.php**. Es muy recomendable en nivel de Apache permitir acceso solo de un IP usado por administrador.
 
 El fichero configuración de Nginx **nginx/nginx.conf**. Es necesario configurar Nginx con el modulo **mod_zip**.
 > ip.ip.ip.ip es el IP de vuestro servidor
