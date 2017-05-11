@@ -10,7 +10,7 @@ ___
 
 **Español:**
 
-Es un ejemplo en PHP del portal de música, la idea es dara a la gente una posibilidad para subir sus ficheros  musical mp3, y entonces es una ocasión buena para compartir su música y descargar la música actual y favorita de otras personas
+Es un ejemplo en PHP del portal de música, la idea es dara la gente una posibilidades  subir sus ficheros  musical mp3, y entonces es una ocasión buena para compartir su música y descargar la música actual y favorita de otras personas
 
 El motor de proyecto es **DataLife Engine (DLE) 8.3**, de una versión bastante antigua, pero muy cambiada para ofrecer toda funcionalidad de un portal de música. También usaron todas las parches de seguridad y añadida nueva funcionalidad de seguridad, conjunto con configuración de Apache y Nginx para cerrar las agujeros de seguridad posibles. Motor rediseñado para usar los mejores meta tags y palabras clave en caso de mejorar SEO de las páginas.
 
