@@ -10,9 +10,9 @@ ___
 
 **Español:**
 
-Es un ejemplo en PHP del portal de música, la idea es dar las posibilidades a la gente subir sus musical ficheros mp3, y entonces es una ocasión buena para compartir su música y descargar la música actual y favorita de otras personas
+Es un ejemplo en PHP del portal de música, la idea es dara la gente una posibilidades  subir sus ficheros  musical mp3, y entonces es una ocasión buena para compartir su música y descargar la música actual y favorita de otras personas
 
-El motor de proyecto es **DataLife Engine (DLE) 8.3**, de una versión bastante antigua, pero muy cambiada para ofrecer toda funcionalidad de un portal de música. También usaron todas las parches de seguridad y añadidan mucho más nuevas, conjunto con configuración de **Apache** y **Nginx** para cerrar las agujeros de seguridad posibles. Motor rediseñado para usar los mejores meta tags en caso de SEO
+El motor de proyecto es **DataLife Engine (DLE) 8.3**, de una versión bastante antigua, pero muy cambiada para ofrecer toda funcionalidad de un portal de música. También usaron todas las parches de seguridad y añadida nueva funcionalidad de seguridad, conjunto con configuración de Apache y Nginx para cerrar las agujeros de seguridad posibles. Motor rediseñado para usar los mejores meta tags y palabras clave en caso de mejorar SEO de las páginas.
 
 > **En todos los ficheros** en **domain.com/** debe sobrescribir la cadena "domain.com" al nombre de tu dominio
 
@@ -20,8 +20,8 @@ Todos las configuraciones del portal (motor, base de datos, ...) están el la ca
 
 Como una base de funcionalidad descargando música usado el módulo Dle Mservice absolutamente modificado **domain.com/engine/modules/mservice/**
 
-Añadidan los modules comerciales comprados:
-  * Autarización de oAuth - vAuth: **domain.com/engine/modules/vauth/**
+Añadidos los módules comerciales comprados:
+  * Autorización de oAuth - vAuth: **domain.com/engine/modules/vauth/**
   * Modulo para ofrecer funciones de pago: - billing de UnitPay **domain.com/engine/modules/billing_5xhw5tid5/**
   * Modulo de comentarios AJAX - CommentIt: **domain.com/engine/modules/commentit/**
 
@@ -38,4 +38,4 @@ El fichero configuración de Nginx **nginx/nginx.conf**. Es necesario configurar
 
 El fichero de la creación de base de datos usada **mysql/domain.sql**.
 
-Número de grupo de los administradores es **1**. El administrador tiene name = **odmin**, password = **wzzrtSndg4ZrwY8G** y user_id = **1017** (es obligatorio para acceso a toda funcionalidad!)
+Número de grupo de los administradores es **1**. El administrador único al inicio lleva: **name** = "odmin" y **user_id** = "1017" (es obligatorio para tener acceso a toda funcionalidad, puedes sobreescibirlo todo en el código luego), también el administrador lleva **password** = "wzzrtSndg4ZrwY8G" y **email** = "your_mail'arroba'yahoo.com", cámbialo cuando despliegues tu página.
